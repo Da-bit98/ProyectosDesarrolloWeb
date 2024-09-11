@@ -110,6 +110,15 @@ body{
         overflow: hidden;
     }
 
+    .menu_item--active{
+        --transform: rotate(0);
+        --background: #ffbf00;
+    }
+
+    .menu_item--show{
+        background-color: var(--background);
+    }
+
     .menu_links{
         position: fixed;
         max-width: 400px;
@@ -121,6 +130,12 @@ body{
         overflow-y: auto;
         display: grid;
         grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu_links--show{
+        transform: unset;
+        width: 100%;
     }
 
     .menu_link{
