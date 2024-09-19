@@ -24,7 +24,7 @@ const pause = () =>{
 }
 
 const stop = () =>{
-    secondSphere.style.transform = 'rotate(-90deg) translateX(60px)';
+    secondSphere.style.transform = 'rotate(-90deg) translateX(90px)';
     secondSphere.style.animation = 'none'
     playPauseButton.classList.remove('running');
     runningTime = 0;
